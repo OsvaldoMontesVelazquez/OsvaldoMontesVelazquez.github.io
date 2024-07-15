@@ -18,7 +18,14 @@ $(window).on('load', function () {
         $(this).remove();
       });
     }
- });
+});
+
+$(".nav-link").on("click", function(){
+    if ($("#navbarSupportedContent").hasClass("show"))
+    {
+        $("#navbarSupportedContent").removeClass("show");
+    }
+});
 
 // smooth scroll
 $(document).ready(function(){
