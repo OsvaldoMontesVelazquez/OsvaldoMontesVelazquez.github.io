@@ -20,6 +20,13 @@ $(window).on('load', function () {
     }
 });
 
+
+$(window).resize(function() {     
+    console.log("brand: " + !$(".brand").hasClass("hide"));
+    console.log("navbar: " + !$(".navbar").hasClass("hide")); 
+    console.log("navbar-toggler-icon: " + !$(".navbar-toggler-icon").hasClass("hide")); 
+ });
+
 $(".nav-link").on("click", function(){
     if ($("#navbarSupportedContent").hasClass("show"))
     {
