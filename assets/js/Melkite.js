@@ -21,11 +21,21 @@ $(window).on('load', function () {
 });
 
 
-$(window).resize(function() {     
-    console.log("brand: " + !$(".brand").hasClass("hide"));
-    console.log("navbar: " + !$(".navbar").hasClass("hide")); 
-    console.log("navbar-toggler-icon: " + !$(".navbar-toggler-icon").hasClass("hide")); 
- });
+$(window).resize(function() 
+{     
+    const anchoVentana = window.innerWidth;
+
+    if (anchoVentana > 991)
+    {
+        $("#navTop").hide();     
+        $("#navBottom").show();             
+    }
+    else
+    {
+        $("#navBottom").hide();     
+        $("#navTop").show();        
+    }
+});
 
 $(".nav-link").on("click", function(){
     if ($("#navbarSupportedContent").hasClass("show"))
