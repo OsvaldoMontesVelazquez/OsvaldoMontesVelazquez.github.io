@@ -20,7 +20,7 @@ $(window).on('load', function () {
     }
 });
 
-/*
+
 $(window).resize(function() 
 {     
     const anchoVentana = window.innerWidth;
@@ -35,7 +35,7 @@ $(window).resize(function()
         $("#navBottom").hide();     
         $("#navTop").show();        
     }
-});*/
+});
 
 $(".nav-link").on("click", function(){
     if ($("#navbarSupportedContent").hasClass("show"))
