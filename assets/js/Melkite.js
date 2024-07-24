@@ -26,11 +26,13 @@ function DeterminarMenu()
 
     if (anchoVentana<=974) 
     {
-        alert("movil");
+         $("#navBottom").hide();     
+        $("#navTop").show();    
     }
     else
     {
-        alert("desktop");
+         $("#navTop").hide();     
+         $("#navBottom").show(); 
     }    
 }
 
