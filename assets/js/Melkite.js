@@ -23,11 +23,6 @@ $(window).on('load', function () {
 
 $(window).resize(function() 
 {     
-   Resize ();
-});
-
-Resize ()
-{
     const anchoVentana = window.innerWidth;
 
     if (anchoVentana > 991)
@@ -40,7 +35,7 @@ Resize ()
         $("#navBottom").hide();     
         $("#navTop").show();        
     }
-}
+});
 
 $(".nav-link").on("click", function(){
     if ($("#navbarSupportedContent").hasClass("show"))
@@ -51,9 +46,6 @@ $(".nav-link").on("click", function(){
 
 // smooth scroll
 $(document).ready(function(){
-
-    Resize ();
-
     $(".navbar .nav-link").on('click', function(event) {
 
         if (this.hash !== "") {
