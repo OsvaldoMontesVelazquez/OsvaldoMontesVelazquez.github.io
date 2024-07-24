@@ -40,8 +40,6 @@ $(window).resize(function()
 {     
      DeterminarMenu();
     /* 
-    
-
     if (anchoVentana > 991)
     {
         $("#navTop").hide();     
