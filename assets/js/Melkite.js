@@ -20,10 +20,25 @@ $(window).on('load', function () {
     }
 });
 
+function DeterminarMenu() 
+{
+    const anchoVentana = $(window).width();
+
+    if (anchoVentana<=974) 
+    {
+        alert("movil");
+    }
+    else
+    {
+        alert("desktop");
+    }    
+}
 
 $(window).resize(function() 
 {     
-    const anchoVentana = window.innerWidth;
+     DeterminarMenu();
+    /* 
+    
 
     if (anchoVentana > 991)
     {
@@ -34,7 +49,7 @@ $(window).resize(function()
     {
         $("#navBottom").hide();     
         $("#navTop").show();        
-    }
+    }*/
 });
 
 $(".nav-link").on("click", function(){
@@ -46,6 +61,9 @@ $(".nav-link").on("click", function(){
 
 // smooth scroll
 $(document).ready(function(){
+
+    DeterminarMenu();
+    
     $(".navbar .nav-link").on('click', function(event) {
 
         if (this.hash !== "") {
